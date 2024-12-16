@@ -1,6 +1,8 @@
 # JS-Hooker
 
-[js-hooker.js](https://github.com/DosX-dev/js-hooker/blob/main/include/js-hooker.js) is a JavaScript module designed for reverse engineering and debugging. It provides a straightforward way to monitor and log external calls made within an application, helping you understand function usage and behavior.
+![preview](pics/preview.jpg)
+
+**[js-hooker.js](https://github.com/DosX-dev/js-hooker/blob/main/include/js-hooker.js)** is a JavaScript module designed for reverse engineering and debugging. It provides a straightforward way to monitor and log external calls made within an application, helping you understand function usage and behavior.
 
 ---
 
