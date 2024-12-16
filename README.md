@@ -7,9 +7,13 @@
 **Features**
 
 🚀 **Real-Time Function Call Monitoring** — Tracks all functions of a given object (like `window`, `document`, or `localStorage`) and logs their usage, including arguments.
+
 🔍 **Native and Code Call Differentiation** — Shows if a function is native or custom (code call). Custom functions are invoked within the app's logic and marked as `[C]` in the logs.
+
 ⚙️ **Customizable Scope** — Allows monitoring specific objects and excluding selected functions from hooking.
+
 📋 **Readable Console Output** — Displays logs in a clean, color-coded format for better clarity.
+
 🌐 **Flexible Environment Support** — Works smoothly in both browser and Node.js environments.
 
 ---
