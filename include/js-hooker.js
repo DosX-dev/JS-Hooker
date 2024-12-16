@@ -2,15 +2,17 @@
 // We're not like this — life is like this.
 
 console.clear();
-console.log(`%c
-                                                                         
-      ██ ███████       ██   ██  ██████   ██████  ██   ██ ███████ ██████  
-      ██ ██            ██   ██ ██    ██ ██    ██ ██  ██  ██      ██   ██ 
-      ██ ███████ █████ ███████ ██    ██ ██    ██ █████   █████   ██████  
- ██   ██      ██       ██   ██ ██    ██ ██    ██ ██  ██  ██      ██   ██ 
-  █████  ███████       ██   ██  ██████   ██████  ██   ██ ███████ ██   ██ 
-          %cCoded by DosX%c — %chttps://github.com/DosX-dev/js-hooker          `,
-    'color: white; background: black; font-size: 12px; font-weight: bold;', 'color: white; background: black; font-size: 12px;', 'color: white; background: black; font-size: 12px;', 'color: white; background: black; font-size: 12px;');
+
+console.log(`
+      __ _____     _____         _            
+   __|  |   __|___|  |  |___ ___| |_ ___ ___  
+  |  |  |__   |___|     | . | . | '_| -_|  _| 
+  |_____|_____|   |__|__|___|___|_,_|___|_|   
+     https://github.com/DosX-dev/js-hooker    
+               Coded by DosX                  
+
+`);
+
 
 const nativeFunctionCache = {};
 
