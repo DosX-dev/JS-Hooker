@@ -18,6 +18,9 @@
 
 ## Usage
 
+> [!IMPORTANT]  
+> The module only tracks existing (already declared) functions. New ones will be ignored. Connect it only after initialization.
+
 1. **Load the Module**:
    Include the script in HTML file like this:
    ```html
