@@ -55,25 +55,25 @@
 
 ## Sample Output
 
-### Native Function Call
+#### Native Function Call
 ```plaintext
 [N] [CALL CAPTURED]: localStorage.getItem("key");
 ```
 
-### Code Call (Custom Function)
+#### Code Call (Custom Function)
 ```plaintext
 [C] [CALL CAPTURED]: customFunction("test", { "param": true });
 ```
 
 ## Advanced Configuration
 
-### Exclude Functions
+#### Exclude Functions
 To avoid tracking specific functions, add their names to the exclusion list:
 ```javascript
 watchAllFunctions(window, ["alert"]);
 ```
 
-### Node.js Support
+#### Node.JS Support
 Monitor global functions in a Node.js environment:
 ```javascript
 if (typeof global === 'object') {
