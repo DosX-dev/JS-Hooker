@@ -35,7 +35,7 @@ function getHookedFunction(originalFunction) {
         "[native code]";
         const args = Array.from(arguments).map(arg => {
             if (typeof arg === 'string') {
-                return `"${arg.replace(/"/g, '\\"')}"`;
+                return `"${arg.replace(/"/g, '\\"').replace(/\n/g, '\\n')}"`;
             } else if (typeof arg === 'object') {
                 try {
                     return JSON.stringify(arg);
