@@ -67,21 +67,12 @@
 
 ## ⚙️ Advanced Configuration
 
-#### Exclude Functions
-To avoid tracking specific functions, add their names to the exclusion list:
+**Exclude-list**: To avoid tracking specific functions, add their names to the exclusion list:
 ```javascript
 watchAllFunctions(window, ["alert"]);
 ```
 
-#### Node.JS Support
-Monitor global functions in a Node.js environment:
-```javascript
-if (typeof global === 'object') {
-    watchAllFunctions(global);
-}
-```
-
-### ⚠️ Limitations
+## ⚠️ Limitations
 
 The `watchAllFunctions` method does not work for non-enumerable functions (e.g., `eval`). In such cases, you should manually apply the hook like this:
 ```javascript
