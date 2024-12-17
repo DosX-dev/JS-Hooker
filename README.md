@@ -16,7 +16,7 @@
 
 ---
 
-## Usage
+## 📖 Usage
 
 > [!IMPORTANT]  
 > The module only tracks existing (already declared) functions. New ones will be ignored. Connect it only after initialization.
@@ -53,7 +53,7 @@
    - `[N]`: Native function call
    - `[C]`: Code call (custom function defined in the app)
 
-## Sample Output
+## 📊 Sample Output
 
 #### Native Function Call
 ```plaintext
@@ -65,7 +65,7 @@
 [C] [CALL CAPTURED]: customFunction("test", { "param": true });
 ```
 
-## Advanced Configuration
+## ⚙️ Advanced Configuration
 
 #### Exclude Functions
 To avoid tracking specific functions, add their names to the exclusion list:
@@ -81,8 +81,16 @@ if (typeof global === 'object') {
 }
 ```
 
-## Customization
+### ⚠️ Limitations
+
+The `watchAllFunctions` method does not work for non-enumerable functions (e.g., `eval`). In such cases, you should manually apply the hook like this:
+```javascript
+// Replace original 'eval'
+eval = getHookedFunction(eval);
+```
+
+## 🛠️ Customization
 This script is intentionally simple to modify. You can tweak its behavior, such as the logging format, which objects it tracks, or even extend its functionality to match your requirements.
 
-## Disclaimer
+## 📜 Disclaimer
 This tool is for educational purposes, debugging, and lawful reverse engineering only. Ensure compliance with legal and ethical guidelines while using it.
